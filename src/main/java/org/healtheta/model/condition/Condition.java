@@ -94,4 +94,148 @@ public class Condition implements Serializable {
     @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true)
     @Column(name = "_note")
     private List<Annotation> note;
+
+    public Long getId() {
+        return id;
+    }
+
+    public Identifier getIdentifier() {
+        return identifier;
+    }
+
+    public String getClinicalStatus() {
+        return clinicalStatus;
+    }
+
+    public String getVerificationStatus() {
+        return verificationStatus;
+    }
+
+    public List<CodeableConcept> getCategory() {
+        return category;
+    }
+
+    public Identifier getSeverity() {
+        return severity;
+    }
+
+    public CodeableConcept getCode() {
+        return code;
+    }
+
+    public List<CodeableConcept> getBodySite() {
+        return bodySite;
+    }
+
+    public Reference getSubject() {
+        return subject;
+    }
+
+    public Reference getContext() {
+        return context;
+    }
+
+    public Onset getOnset() {
+        return onset;
+    }
+
+    public Abatement getAbatement() {
+        return abatement;
+    }
+
+    public Date getAssertedDate() {
+        return assertedDate;
+    }
+
+    public Reference getAsserter() {
+        return asserter;
+    }
+
+    public ConditionStage getStage() {
+        return stage;
+    }
+
+    public List<ConditionEvidence> getEvidence() {
+        return evidence;
+    }
+
+    public Reference getReference() {
+        return reference;
+    }
+
+    public List<Annotation> getNote() {
+        return note;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public void setIdentifier(Identifier identifier) {
+        this.identifier = identifier;
+    }
+
+    public void setClinicalStatus(String clinicalStatus) {
+        this.clinicalStatus = clinicalStatus;
+    }
+
+    public void setVerificationStatus(String verificationStatus) {
+        this.verificationStatus = verificationStatus;
+    }
+
+    public void setCategory(List<CodeableConcept> category) {
+        this.category = category;
+    }
+
+    public void setSeverity(Identifier severity) {
+        this.severity = severity;
+    }
+
+    public void setCode(CodeableConcept code) {
+        this.code = code;
+    }
+
+    public void setBodySite(List<CodeableConcept> bodySite) {
+        this.bodySite = bodySite;
+    }
+
+    public void setSubject(Reference subject) {
+        this.subject = subject;
+    }
+
+    public void setContext(Reference context) {
+        this.context = context;
+    }
+
+    public void setOnset(Onset onset) {
+        this.onset = onset;
+    }
+
+    public void setAbatement(Abatement abatement) {
+        this.abatement = abatement;
+    }
+
+    public void setAssertedDate(Date assertedDate) {
+        this.assertedDate = assertedDate;
+    }
+
+    public void setAsserter(Reference asserter) {
+        this.asserter = asserter;
+    }
+
+    public void setStage(ConditionStage stage) {
+        this.stage = stage;
+    }
+
+    public void setEvidence(List<ConditionEvidence> evidence) {
+        this.evidence = evidence;
+    }
+
+    public void setReference(Reference reference) {
+        this.reference = reference;
+    }
+
+    public void setNote(List<Annotation> note) {
+        this.note = note;
+    }
 }

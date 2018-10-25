@@ -22,4 +22,28 @@ public class ConditionEvidence {
     @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true)
     @Column(name = "_detail")
     private List<Reference> detail;
+
+    public Long getId() {
+        return id;
+    }
+
+    public List<CodeableConcept> getCode() {
+        return code;
+    }
+
+    public List<Reference> getDetail() {
+        return detail;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public void setCode(List<CodeableConcept> code) {
+        this.code = code;
+    }
+
+    public void setDetail(List<Reference> detail) {
+        this.detail = detail;
+    }
 }

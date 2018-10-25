@@ -23,4 +23,28 @@ public class ConditionStage {
     @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true)
     @Column(name = "_assesement")
     private List<Reference> assesment;
+
+    public Long getId() {
+        return id;
+    }
+
+    public CodeableConcept getSummary() {
+        return summary;
+    }
+
+    public List<Reference> getAssesment() {
+        return assesment;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public void setSummary(CodeableConcept summary) {
+        this.summary = summary;
+    }
+
+    public void setAssesment(List<Reference> assesment) {
+        this.assesment = assesment;
+    }
 }
