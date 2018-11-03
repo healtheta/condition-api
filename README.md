@@ -6,13 +6,19 @@
 
 * **URL**
 
-http://yourhostname/condition/create
+http://host.name/condition/create
 
 * **Method:**
   
   `POST`
-
-  `GET` | `POST` | `DELETE` | `PUT`
+  
+  * **Data Params**
+  Condition Resource data
+  ```json
+{"id":null,"identifier":{"id":null,"use":value,"type":value,"system":value,"value":value,"period":value,"assigner":value},"clinicalStatus":value,"verificationStatus":value,"category":value,"severity":value,"code":value,"bodySite":value,"subject":value,"context":value,"onset":value,"abatement":value,"assertedDate":value,"asserter":value,"stage":value,"evidence":value,"reference":value,"note":value}
+```
+  
+  
   
 *  **URL Params**
 
