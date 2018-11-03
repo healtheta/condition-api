@@ -15,7 +15,34 @@ http://host.name/condition/create
   * **Data Params**
   Condition Resource data
   ```json
-{"id":null,"identifier":{"id":null,"use":value,"type":value,"system":value,"value":value,"period":value,"assigner":value},"clinicalStatus":value,"verificationStatus":value,"category":value,"severity":value,"code":value,"bodySite":value,"subject":value,"context":value,"onset":value,"abatement":value,"assertedDate":value,"asserter":value,"stage":value,"evidence":value,"reference":value,"note":value}
+{
+    "id": null,
+    "identifier": {
+        "id": null,
+        "use": null,
+        "type": null,
+        "system": null,
+        "value": "0000000000",
+        "period": null,
+        "assigner": null
+    },
+    "clinicalStatus": null,
+    "verificationStatus": null,
+    "category": null,
+    "severity": null,
+    "code": null,
+    "bodySite": null,
+    "subject": null,
+    "context": null,
+    "onset": null,
+    "abatement": null,
+    "assertedDate": null,
+    "asserter": null,
+    "stage": null,
+    "evidence": null,
+    "reference": null,
+    "note": null
+}
 ```
   
   
