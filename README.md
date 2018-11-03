@@ -19,35 +19,68 @@ http://host.name/condition/create
     "id": null,
     "identifier": {
         "id": null,
-        "use": null,
-        "type": null,
-        "system": null,
-        "value": "0000000000",
-        "period": null,
-        "assigner": null
+        "use": value,
+        "type": value,
+        "system": value,
+        "value": value,
+        "period": value,
+        "assigner": value
     },
-    "clinicalStatus": null,
-    "verificationStatus": null,
-    "category": null,
-    "severity": null,
-    "code": null,
-    "bodySite": null,
-    "subject": null,
-    "context": null,
-    "onset": null,
-    "abatement": null,
-    "assertedDate": null,
-    "asserter": null,
-    "stage": null,
-    "evidence": null,
-    "reference": null,
-    "note": null
+    "clinicalStatus": value,
+    "verificationStatus": value,
+    "category": value,
+    "severity": value,
+    "code": value,
+    "bodySite": value,
+    "subject": value,
+    "context": value,
+    "onset": value,
+    "abatement": value,
+    "assertedDate": value,
+    "asserter": value,
+    "stage": value,
+    "evidence": value,
+    "reference": value,
+    "note": value
 }
 ```
-  
+* **Success Response:**  
   
   
 *  **URL Params**
+
+  * **Code:** 200 <br />
+    **Content:** 
+    ```javascript
+{
+    "id": assigned id,
+    "identifier": {
+        "id": value,
+        "use": value,
+        "type": value,
+        "system": value,
+        "value": value,
+        "period": value,
+        "assigner": value
+    },
+    "clinicalStatus": value,
+    "verificationStatus": value,
+    "category": value,
+    "severity": value,
+    "code": value,
+    "bodySite": value,
+    "subject": value,
+    "context": value,
+    "onset": value,
+    "abatement": value,
+    "assertedDate": value,
+    "asserter": value,
+    "stage": value,
+    "evidence": value,
+    "reference": value,
+    "note": value
+}
+```
 
    <_If URL params exist, specify them in accordance with name mentioned in URL section. Separate into optional and required. Document data constraints._> 
 
