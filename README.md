@@ -2,15 +2,15 @@
 
 **Create**
 ----
-  <_Additional information about your API call. Try to use verbs that match both request type (fetching vs modifying) and plurality (one vs multiple)._>
+ Create a condition resource in the platform
 
 * **URL**
 
-  <_The URL Structure (path only, no root url)_>
+http://yourhostname/condition/create
 
 * **Method:**
   
-  <_The request type_>
+  `POST`
 
   `GET` | `POST` | `DELETE` | `PUT`
   
