@@ -166,7 +166,7 @@ http://host.name/condition/read/{id}
 
 * **URL**
 
-http://host.name/condition/create
+http://host.name/condition/update
 
 * **Method:**
   
@@ -251,5 +251,45 @@ http://host.name/condition/create
 
   * **Code:** 500 INTERNAL ERROR <br />
     **Content:** `{ severity : "error", "code":"500", "details":"internal error", "diagnostic":null, "expression": null, "location":null }` 
+    
+**Read**
+----
+ Search condition resources from a given search criteria
+
+* **URL**
+
+http://host.name/condition/read?subjec=&<context=>}
+
+* **Method:**
+  
+  `GET`
+  
+    * **Data Params**
+ 
+   `subject=[<patient | Group> reference id]`
+   
+   `context=[<Encounter | Episode of Care> reference id]`
+  
+* **Success Response:**  
+
+  
+*  **URL Params**
+
+  * **Code:** 200 <br />
+    **Content:** 
+  List of conditions complying to search criteria
+
+* **Error Response:**
+
+  * **Code:** 422 INVALID PARAMETER <br />
+    **Content:** `{ severity : "error", "code":"422", "details":"invalid parameter", "diagnostic":null, "expression": null, "location":null }`
+    
+  * **Code:** 410 RECORD EXISTS <br />
+    **Content:** `{ severity : "error", "code":"410", "details":"record not found", "diagnostic":null, "expression": null, "location":null }`    
+
+  * **Code:** 500 INTERNAL ERROR <br />
+    **Content:** `{ severity : "error", "code":"500", "details":"internal error", "diagnostic":null, "expression": null, "location":null }`     
+    
+    
 
 
