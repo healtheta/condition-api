@@ -252,7 +252,7 @@ http://host.name/condition/update
   * **Code:** 500 INTERNAL ERROR <br />
     **Content:** `{ severity : "error", "code":"500", "details":"internal error", "diagnostic":null, "expression": null, "location":null }` 
     
-**Read**
+**Search**
 ----
  Search condition resources from a given search criteria
 
