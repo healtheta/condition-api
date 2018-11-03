@@ -14,7 +14,7 @@ http://host.name/condition/create
   
   * **Data Params**
   Condition Resource data
-  ```json
+```javascript
 {
     "id": null,
     "identifier": {
